@@ -12,7 +12,7 @@ set autoindent
 set autowrite
 
 " Tabs are evil
-set expandtab
+"set expandtab
 
 " Set formatting of text and comments
 set formatoptions=tn1
@@ -48,7 +48,7 @@ set lazyredraw
 set nostartofline
 
 " Want mouse support
-set mouse=a
+"set mouse=a
 
 " Maintain some more context around the cursor
 set scrolloff=3
@@ -258,5 +258,5 @@ let g:neocomplcache_omni_patterns.haxe = '\v([\]''"]|\w)(\.|\()'
 
 let omlet_indent_let=0
 
-map <F4> :call vaxe#ImportClass()
-map <F12> :call vaxe#Ctags()
+map <F4> :call vaxe#ImportClass()<CR>
+map <F12> :call vaxe#Ctags()<CR>
