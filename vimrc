@@ -257,3 +257,6 @@ endif
 let g:neocomplcache_omni_patterns.haxe = '\v([\]''"]|\w)(\.|\()'
 
 let omlet_indent_let=0
+
+map <F4> :call vaxe#ImportClass()
+map <F12> :call vaxe#Ctags()
