@@ -70,7 +70,7 @@ set showmatch
 set smarttab
 
 " Want better buffer handling in quickfix mode
-set switchbuf=useopen,usetab,split
+set switchbuf=useopen,usetab
 
 " Tabs are 2 characters
 set tabstop=2
@@ -85,7 +85,7 @@ set title
 set viminfo='20,<50,s10,h,%
 
 " No beeps - don't want to annoy neighbors
-set visualbell
+"set visualbell
 
 " Expand the command line using tab
 set wildmenu
@@ -173,7 +173,7 @@ imap   <S-Down>    <esc><C-w><Down>
 
 " OCaml stuff
 let no_ocaml_comments = 1
-set makeprg=ocamlbuild\ -no-links\ -use-ocamlfind\ all.otarget
+" set makeprg=ocamlbuild\ -no-links\ -use-ocamlfind\ all.otarget
 
 " Remove GUI-nonsense
 set guioptions-=T
@@ -260,3 +260,11 @@ let omlet_indent_let=0
 
 map <F4> :call vaxe#ImportClass()<CR>
 map <F12> :call vaxe#Ctags()<CR>
+
+autocmd BufWritePre *.ml,*.hx :%s/\s\+$//e
+
+"warn if file changed
+au FileChangedShell * echo "Warning: File changed on disk"
+
+"highlight variable under cursor
+:autocmd CursorMoved * exe printf('match DiffChange /\V\<%s\>/', escape(expand('<cword>'), '/\'))
