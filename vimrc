@@ -240,7 +240,7 @@ if filereadable(expand('~/.vimrc_local'))
   source ~/.vimrc_local
 endif
 
-colors twilight
+colors desert
 filetype plugin indent on
 
 set ts=2
@@ -249,7 +249,7 @@ set sts=2
 set tw=0
 set autoindent
 
-set number
+" set number
 
 if !exists('g:neocomplcache_omni_patterns')
 	let g:neocomplcache_omni_patterns = {}
@@ -267,4 +267,9 @@ autocmd BufWritePre *.ml,*.hx :%s/\s\+$//e
 au FileChangedShell * echo "Warning: File changed on disk"
 
 "highlight variable under cursor
-:autocmd CursorMoved * exe printf('match DiffChange /\V\<%s\>/', escape(expand('<cword>'), '/\'))
+:autocmd CursorMoved * exe printf('match DiffText /\V\<%s\>/', escape(expand('<cword>'), '/\'))
+
+"set paste toggle for F2
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
