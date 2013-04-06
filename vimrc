@@ -273,3 +273,9 @@ au FileChangedShell * echo "Warning: File changed on disk"
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
+
+inoremap <C-Space> <C-X><C-O>
+inoremap <Nul> <C-X><C-O>
+
+noremap <C-I> <ESC>:call vaxe#ImportClass()<CR>
+noremap <C-T> <ESC>:call vaxe#Ctags()<CR>
