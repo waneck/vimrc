@@ -279,3 +279,10 @@ inoremap <Nul> <C-X><C-O>
 
 noremap <C-I> <ESC>:call vaxe#ImportClass()<CR>
 noremap <C-T> <ESC>:call vaxe#Ctags()<CR>
+
+noremap <C-E> :TComment<CR>
+inoremap <C-E> <C-O>:TComment<CR>
+
+call tcomment#DefineType('haxe',                '// %s'    )
+call tcomment#DefineType('haxe_inline',         g:tcommentInlineC  )
+call tcomment#DefineType('haxe_block',          g:tcommentBlockC   )
