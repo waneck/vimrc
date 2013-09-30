@@ -241,7 +241,7 @@ if filereadable(expand('~/.vimrc_local'))
   source ~/.vimrc_local
 endif
 
-colors desert
+colors vimTheme
 filetype plugin indent on
 
 set ts=2
