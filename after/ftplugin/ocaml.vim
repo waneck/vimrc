@@ -1,0 +1,2 @@
+set et!
+setlocal et!

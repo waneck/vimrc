@@ -627,3 +627,4 @@ let &cpoptions=s:cposet
 unlet s:cposet
 
 " vim:sw=2 fdm=indent
+set et!

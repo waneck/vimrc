@@ -74,6 +74,7 @@ set switchbuf=useopen,usetab
 
 " Tabs are 2 characters
 set tabstop=2
+set et!
 
 " Don't wrap words
 set textwidth=0
@@ -274,6 +275,7 @@ nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
 
+nnoremap <C-H> :call vaxe#ProjectHxml()<CR>
 inoremap <C-Space> <C-X><C-O>
 inoremap <Nul> <C-X><C-O>
 
@@ -286,3 +288,6 @@ inoremap <C-E> <C-O>:TComment<CR>
 call tcomment#DefineType('haxe',                '// %s'    )
 call tcomment#DefineType('haxe_inline',         g:tcommentInlineC  )
 call tcomment#DefineType('haxe_block',          g:tcommentBlockC   )
+
+set et!
+setlocal et!

@@ -18,7 +18,7 @@ setlocal com=sO:#\ -,mO:#\ \ ,b:#
 setlocal commentstring=#\ %s
 
 " always use spaces and not tabs
-setlocal expandtab
+setlocal expandtab!
 
 " Including files.
 let &l:include = '^\s*include'
