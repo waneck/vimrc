@@ -20,8 +20,10 @@ hi Function	    guifg=#ccffcc    ctermfg=252    gui=none    cterm=none
 hi Identifier	    guifg=#ccffcc    ctermfg=252    gui=none    cterm=none 
 hi LineNr	    guifg=#ffee22    ctermfg=226    gui=none    cterm=none 
 hi MatchParen	    guifg=#ccffcc    ctermfg=252    guibg=#008b8b    ctermbg=33    gui=none    cterm=none 
-hi Normal	    guifg=#ffffff    ctermfg=231    guibg=#333333    ctermbg=237    gui=none    cterm=none 
-hi NonText	    guibg=#444444    ctermbg=239    guifg=#81bed6    ctermfg=89    gui=none    cterm=none 
+hi Normal	    guifg=#ffffff    ctermfg=231    guibg=#333333    ctermbg=none    gui=none    cterm=none 
+" hi Normal	    guifg=#ffffff    ctermfg=231    guibg=#333333    ctermbg=237    gui=none    cterm=none 
+"hi NonText	    guibg=#444444    ctermbg=239    guifg=#81bed6    ctermfg=89    gui=none    cterm=none 
+hi NonText	    guibg=#444444    ctermbg=none    guifg=#81bed6    ctermfg=89    gui=none    cterm=none 
 hi Number	    guifg=#ffa0a0    ctermfg=214    gui=none    cterm=none 
 hi PreProc	    guifg=#ffa0a0    ctermfg=214    gui=none    cterm=none 
 hi Statement	    guifg=#f0e68c    ctermfg=255    gui=none    cterm=none 
