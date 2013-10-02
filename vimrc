@@ -291,3 +291,5 @@ call tcomment#DefineType('haxe_block',          g:tcommentBlockC   )
 
 set et!
 setlocal et!
+
+nnoremap <C-O> :CtrlP /usr/lib/haxe/std<CR>
