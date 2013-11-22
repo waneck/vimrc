@@ -289,3 +289,8 @@ set et!
 setlocal et!
 
 nnoremap <C-O> :CtrlP /usr/lib/haxe/std<CR>
+
+noremap <F5> <ESC>:make haxe<CR>
+inoremap <F5> <ESC>:make haxe<CR>
+noremap <F8> <ESC>:w<CR>
+inoremap <F8> <ESC>:w<CR>

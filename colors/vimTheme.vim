@@ -32,12 +32,12 @@ hi SpecialKey	    guifg=#9acd32    ctermfg=247    gui=none    cterm=none
 hi StatusLine	    guibg=#c2bfa5    ctermbg=none    guifg=#000000    ctermfg=231    gui=none    cterm=none 
 "hi StatusLine	    guibg=#c2bfa5    ctermbg=07    guifg=#000000    ctermfg=231    gui=none    cterm=none 
 "hi StatusLineNC	    guibg=#c2bfa5     ctermbg=07    guifg=#7777777    ctermfg=231    gui=none    cterm=none 
-hi StatusLineNC	    guibg=#c2bfa5     ctermbg=none    guifg=#7777777    ctermfg=231    gui=none    cterm=none 
+hi StatusLineNC	    guibg=#c2bfa5     ctermbg=none    guifg=#777777    ctermfg=231    gui=none    cterm=none 
 hi String	    guifg=#ffa0a0    ctermfg=214    gui=none    cterm=none 
 hi StorageClass	    guifg=#bdb76b    ctermfg=250    gui=none    cterm=none 
 hi Title	    guifg=#cd5c5c    ctermfg=252    gui=bold    cterm=bold 
 hi Todo	    guifg=#fffefc    ctermfg=226    gui=none    cterm=none 
 hi Type	    guifg=#bdb76b    ctermfg=250    gui=none    cterm=none 
 hi Underlined	    guifg=#80a0ff    ctermfg=89    gui=underline    cterm=underline 
-hi VertSplit	    guibg=#c2bfa5     ctermbg=07    guifg=#7777777    ctermfg=231    gui=none    cterm=none 
+hi VertSplit	    guibg=#c2bfa5     ctermbg=07    guifg=#777777    ctermfg=231    gui=none    cterm=none 
 hi Visual	    guifg=#f0e68c    ctermfg=255    guibg=#6b8e23    ctermbg=242    gui=none    cterm=none 
