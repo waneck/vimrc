@@ -1,2 +1,0 @@
-set et!
-setlocal et!

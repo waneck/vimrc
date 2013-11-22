@@ -1,5 +1,5 @@
-
 " Maintainer:   Markus Mottl  <markus.mottl@gmail.com>
+" Tweaked by: Cauë Waneck
 " URL:          https://bitbucket.org/mmottl/vim-files
 
 " I want Vim, not Vi
@@ -10,9 +10,6 @@ set autoindent
 
 " Automatically write buffer before special actions
 set autowrite
-
-" Tabs are evil
-"set expandtab
 
 " Set formatting of text and comments
 set formatoptions=tn1
@@ -39,7 +36,7 @@ set laststatus=2
 set linebreak
 
 " Set statusline
-set statusline=%F%m%r%h%w\ %y\ [pos=%l,%v]\ [len=%L\ (%p%%)]
+"set statusline=%F%m%r%h%w\ %y\ [pos=%l,%v]\ [len=%L\ (%p%%)]
 
 " Don't display macro steps
 set lazyredraw
@@ -118,23 +115,22 @@ let g:AutoClosePairs = {'(': ')', '{': '}', '[': ']', '"': '"'}
 let g:is_posix = 1
 
 " Colors for color xterms
-if has("terminfo")
-  set t_Co=8
-  set t_Sf=[3%p1%dm
-  set t_Sb=[4%p1%dm
-  set <S-Up>=O2A
-  set <S-Down>=O2B
-  set <S-Left>=O2D
-  set <S-Right>=O2C
-else
-  set t_Co=8
-  set t_Sf=[3%dm
-  set t_Sb=[4%dm
-endif
+"if has("terminfo")
+"  set t_Co=8
+"  set t_Sf=[3%p1%dm
+"  set t_Sb=[4%p1%dm
+"  set <S-Up>=O2A
+"  set <S-Down>=O2B
+"  set <S-Left>=O2D
+"  set <S-Right>=O2C
+"else
+"  set t_Co=8
+"  set t_Sf=[3%dm
+"  set t_Sb=[4%dm
+"endif
 
 " Use my color preferences
 set background=dark
-"colorscheme markus
 
 " Ex-mode is pretty dumb, remap Q to reformat the current paragraph
 nnoremap Q gqip
