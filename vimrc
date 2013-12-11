@@ -296,3 +296,8 @@ noremap <C-F5> <ESC>:make haxe<CR>
 inoremap <C-F5> <ESC>:make haxe<CR>
 noremap <F8> <ESC>:w<CR>
 inoremap <F8> <ESC>:w<CR>
+
+noremap <leader>c "+y
+vnoremap <leader>c "+y
+noremap <leader>v "+p
+vnoremap <leader>v "+p
