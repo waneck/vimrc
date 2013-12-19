@@ -37,10 +37,10 @@ imap <C-e> <Esc>O
 map < H
 map > L
 """ Searching (Google)
-map  <C-k> ogoogle<Space>
-imap <C-k> <Esc>ogoogle<Space>
-map  <C-S-k> tgoogle<Space>
-imap <C-S-k> <Esc>tgoogle<Space>
+map  <C-k> oduckduckgo<Space>
+imap <C-k> <Esc>oduckduckgo<Space>
+map  <C-S-k> tduckduckgo<Space>
+imap <C-S-k> <Esc>tduckduckgo<Space>
 " I hate when I want to press <C-w> but I hit q instead
 map <C-q> <Nop>
 """ Firefox Dialogs
