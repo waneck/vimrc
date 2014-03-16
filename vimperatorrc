@@ -16,6 +16,8 @@ nnoremap j 5j
 nnoremap k 5k
 nnoremap h 5h
 nnoremap l 5l
+nnoremap J gT
+nnoremap K gt
 
 "" show numbers on each tab
 set tabnumbers

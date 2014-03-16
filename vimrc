@@ -259,6 +259,7 @@ map <F4> :call vaxe#ImportClass()<CR>
 map <F12> :call vaxe#Ctags()<CR>
 
 autocmd BufWritePre *.ml,*.hx :%s/\s\+$//e
+autocmd BufRead,BufNewFile *.ml,*.hx :set et!
 
 "warn if file changed
 au FileChangedShell * echo "Warning: File changed on disk"
@@ -301,3 +302,8 @@ noremap <leader>c "+y
 vnoremap <leader>c "+y
 noremap <leader>v "+p
 vnoremap <leader>v "+p
+
+noremap J gT
+vnoremap J gT
+noremap K gt
+vnoremap K gt
