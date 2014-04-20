@@ -71,7 +71,7 @@ set switchbuf=useopen,usetab
 
 " Tabs are 2 characters
 set tabstop=2
-set et!
+set noexpandtab
 
 " Don't wrap words
 set textwidth=0
@@ -259,7 +259,7 @@ map <F4> :call vaxe#ImportClass()<CR>
 map <F12> :call vaxe#Ctags()<CR>
 
 autocmd BufWritePre *.ml,*.hx :%s/\s\+$//e
-autocmd BufRead,BufNewFile *.ml,*.hx :set et!
+autocmd BufReadPost,BufNewFile *.ml,*.hx :set noexpandtab
 
 "warn if file changed
 au FileChangedShell * echo "Warning: File changed on disk"
@@ -286,8 +286,7 @@ call tcomment#DefineType('haxe',                '// %s'    )
 call tcomment#DefineType('haxe_inline',         g:tcommentInlineC  )
 call tcomment#DefineType('haxe_block',          g:tcommentBlockC   )
 
-set et!
-setlocal et!
+set noexpandtab
 
 nnoremap <C-O> :CtrlP /usr/lib/haxe/std<CR>
 
