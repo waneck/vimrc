@@ -115,13 +115,13 @@ let g:AutoClosePairs = {'(': ')', '{': '}', '[': ']', '"': '"'}
 let g:is_posix = 1
 
 " Colors for color xterms
-"if has("terminfo")
-"  set t_Co=8
-"  set t_Sf=[3%p1%dm
-"  set t_Sb=[4%p1%dm
-"  set <S-Up>=O2A
-"  set <S-Down>=O2B
-"  set <S-Left>=O2D
+" if has("terminfo")
+ " set t_Co=8
+ " set t_Sf=[3%p1%dm
+ " set t_Sb=[4%p1%dm
+ " set <S-Up>=O2A
+ " set <S-Down>=O2B
+ " set <S-Left>=O2D
 "  set <S-Right>=O2C
 "else
 "  set t_Co=8
@@ -238,7 +238,7 @@ if filereadable(expand('~/.vimrc_local'))
 endif
 
 " colors vimTheme
-colors atom-dark
+colors sexy-railscasts-256
 " colors genericdc
 filetype plugin indent on
 
@@ -308,3 +308,5 @@ noremap J gT
 vnoremap J gT
 noremap K gt
 vnoremap K gt
+
+se t_Co=256

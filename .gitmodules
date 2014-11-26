@@ -34,3 +34,6 @@
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
+[submodule "bundle/xterm-color-table"]
+	path = bundle/xterm-color-table
+	url = https://github.com/guns/xterm-color-table.vim.git
