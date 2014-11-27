@@ -272,7 +272,7 @@ autocmd BufReadPost,BufNewFile *.ml,*.hx :set noexpandtab
 au FileChangedShell * echo "Warning: File changed on disk"
 
 "highlight variable under cursor
-:autocmd CursorMoved * exe printf('match DiffText /\V\<%s\>/', escape(expand('<cword>'), '/\'))
+:autocmd CursorMoved * exe printf('match CursorColumn /\V\<%s\>/', escape(expand('<cword>'), '/\'))
 
 "set paste toggle for F2
 nnoremap <F2> :set invpaste paste?<CR>
