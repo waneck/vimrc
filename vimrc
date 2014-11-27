@@ -238,7 +238,10 @@ if filereadable(expand('~/.vimrc_local'))
 endif
 
 " colors vimTheme
-colors sexy-railscasts-256
+" colors sexy-railscasts-256
+
+let g:hybrid_use_Xresources = 1
+colorscheme hybrid
 " colors genericdc
 filetype plugin indent on
 
