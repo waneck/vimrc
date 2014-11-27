@@ -237,12 +237,14 @@ if filereadable(expand('~/.vimrc_local'))
   source ~/.vimrc_local
 endif
 
-" colors vimTheme
-" colors sexy-railscasts-256
+if !has("gui_running")
+	let g:gruvbox_italic=0
+endif
 
-let g:hybrid_use_Xresources = 1
-colorscheme hybrid
-" colors genericdc
+colors gruvbox
+" colors sexy-railscasts-256
+" let g:hybrid_use_Xresources = 1
+" colorscheme hybrid
 filetype plugin indent on
 
 set ts=2
