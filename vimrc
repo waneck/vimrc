@@ -115,13 +115,13 @@ let g:AutoClosePairs = {'(': ')', '{': '}', '[': ']', '"': '"'}
 let g:is_posix = 1
 
 " Colors for color xterms
-"if has("terminfo")
-"  set t_Co=8
-"  set t_Sf=[3%p1%dm
-"  set t_Sb=[4%p1%dm
-"  set <S-Up>=O2A
-"  set <S-Down>=O2B
-"  set <S-Left>=O2D
+" if has("terminfo")
+ " set t_Co=8
+ " set t_Sf=[3%p1%dm
+ " set t_Sb=[4%p1%dm
+ " set <S-Up>=O2A
+ " set <S-Down>=O2B
+ " set <S-Left>=O2D
 "  set <S-Right>=O2C
 "else
 "  set t_Co=8
@@ -237,7 +237,14 @@ if filereadable(expand('~/.vimrc_local'))
   source ~/.vimrc_local
 endif
 
-colors vimTheme
+if !has("gui_running")
+	let g:gruvbox_italic=0
+endif
+
+colors gruvbox
+" colors sexy-railscasts-256
+" let g:hybrid_use_Xresources = 1
+" colorscheme hybrid
 filetype plugin indent on
 
 set ts=2
@@ -306,3 +313,5 @@ noremap J gT
 vnoremap J gT
 noremap K gt
 vnoremap K gt
+
+se t_Co=256

@@ -15,7 +15,7 @@
 	url = https://github.com/tpope/vim-surround.git
 [submodule "bundle/vaxe"]
 	path = bundle/vaxe
-	url = https://github.com/waneck/vaxe.git
+	url = https://github.com/jdonaldson/vaxe.git
 [submodule "bundle/neocomplcache"]
 	path = bundle/neocomplcache
 	url = https://github.com/Shougo/neocomplcache.git
@@ -37,3 +37,6 @@
 [submodule "bundle/vim-multiple-cursors"]
 	path = bundle/vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors.git
+[submodule "bundle/xterm-color-table"]
+	path = bundle/xterm-color-table
+	url = https://github.com/guns/xterm-color-table.vim.git
